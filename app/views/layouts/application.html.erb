@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="<%= language %>" >
   <head>
-    <title>AppPaggram</title>
+    <!-- Analytics-->
+    <%= render "shared/analytics/analytics" %>
+    <!-- Metas-->
+    <title><%= title %></title>
+    <meta name="language" content="<%= language %>">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="description" content="<%= description %>">
+    <meta name="keywords" content="<%= keywords %>">
+    <meta name="application-name" content="<%= app_name %>">
+    <meta name="theme-color" content="<%= theme_color %>">
+    <meta name="msapplication-TileColor" content="<%= tileColor %>">
+
+    <!-- Favicon-->
+    <%= favicon_link_tag asset_path('medias/FavIcon-16x16.ico', rel:"icon", type:"image/png", sizes:"16x16") %>
+    <%= favicon_link_tag asset_path('medias/FavIcon-32x32.ico', rel:"icon", type:"image/png", sizes:"32x32") %>
+    <%= favicon_link_tag asset_path('medias/FavIcon-48x48.ico', rel:"icon", type:"image/png", sizes:"48x48") %>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+  
+    <!-- actiontext link -->
+    <%= stylesheet_link_tag "actiontext", "data-turbo-track": "reload" %>
   </head>
 
-  <body>
+  <body class="bg-gray-200">
     <%= yield %>
   </body>
 </html>

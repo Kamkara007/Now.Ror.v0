@@ -68,3 +68,31 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+
+############ ENGAGEMENT && ANALYTICS ############
+#gem "letter_opener", group: :development #https://github.com/ryanb/letter_opener
+#gem "ahoy_matey"
+#gem "ahoy_email"
+#gem "groupdate"
+#gem "blazer"
+#gem 'active_analytics'
+#gem 'crawler_detect'
+
+
+########  CLOUD && AWS  ############
+#gem 'aws-sdk-s3', '~> 1'
+#gem 'aws-sdk-ec2', '~> 1'
+gem "active_storage_validations", "~> 1.1"
+
+###########  PAGINATION  ############
+gem "pagy", "~> 8.4" #https://github.com/ddnexus/pagy
+
+########  ICON && APP DECORATIONS  ############
+
+
+####### AUTHENTICATION && SECURITY ############
+#gem "devise", "~> 4.9"
+#gem "wicked", "~> 2.0"
+gem "nanoid", "~> 2.0"
+#gem 'devise_invitable', '~> 2.0', '>= 2.0.9'
