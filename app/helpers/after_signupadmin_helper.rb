@@ -1,0 +1,2 @@
+module AfterSignupadminHelper
+end

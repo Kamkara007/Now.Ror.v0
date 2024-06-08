@@ -1,0 +1,12 @@
+<div class="pt-4">
+  <% @posts.each do |post| %>
+    <div class="bg-white shadow-md rounded-lg py-2 my-2">
+      <div class="flex justify-between items-center">
+        <span class="text-sm text-gray-600"><%= post.created_at.strftime("%d %b %Y") %></span>
+      </div>
+      <div class="flex justify-between items-center mt-4">
+        <p class="text-sm text-gray-600"><%= post.content %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

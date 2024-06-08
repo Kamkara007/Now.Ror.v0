@@ -1,0 +1,15 @@
+  <% if current_user.user_avatar.present? %>
+    <div class="avatar placeholder  ">
+        <div class="bg-neutral-focus text-neutral-content rounded-full w-16 md:w-24 ">
+            <span class="text-3xl"> <%=  image_tag(current_user.user_avatar, alt:"Photo de profil") %> </span>
+        </div>
+    </div> 
+  <% else %>
+    <% user_default_avatar = "#{[current_user.email.first, current_user.email.first].join('')}"  %>
+
+    <div class="avatar placeholder  ">
+        <div class="bg-neutral-focus text-neutral-content rounded-full w-8 md:w-8 ">
+            <span class="text-3xl"> <%= user_default_avatar %> </span>
+        </div>
+    </div> 
+<% end %>

@@ -1,0 +1,19 @@
+<!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+
+    <div class="">
+      
+      <!-- if there is a button in form, it will close the modal -->
+      <%= link_to "créer le studio", "new-studio", class:"btn" %>
+      
+    </div>
+  </div>
+</dialog>
+

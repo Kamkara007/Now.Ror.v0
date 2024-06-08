@@ -5,7 +5,7 @@ include Pagy::Frontend
 
 #Onglet Title
 def title
-    base_title = "Appgram"
+    base_title = "Paggram"
     if @title.nil?
     base_title
     else
@@ -13,7 +13,7 @@ def title
     end
   end
   def app_name
-    "Appgram"
+    "Paggram"
   end
   def language
     "fr"

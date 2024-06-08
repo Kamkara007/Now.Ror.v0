@@ -229,6 +229,33 @@
   dependencies:
     spark-md5 "^3.0.1"
 
+"@stimulus-components/dialog@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@stimulus-components/dialog/-/dialog-1.0.1.tgz#879452b4efb817e16f44c09ac920ae618d12591e"
+  integrity sha512-7cpazrXeFKVmmuGnJOrykEvjRNRTOhLuI7SzgDdAlKWxM8ivBKziBHwjJGR96vCvSkoKwlGMGRcDzXgVRnr/7w==
+
+"@stimulus-components/notification@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@stimulus-components/notification/-/notification-3.0.0.tgz#f67ec72bb0601ec33f597494def72e6ca93dd4a5"
+  integrity sha512-oZrIAcEayLNIhcetMJSLP6S9ryWjiFWBI5JKm639UuRsfSRyxiaHMddb3Xch/Umq6K24h/t2l1zVxxOm/UnMOA==
+  dependencies:
+    stimulus-use "^0.52.2"
+
+"@stimulus-components/password-visibility@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@stimulus-components/password-visibility/-/password-visibility-3.0.0.tgz#314c1bae571ba13b9a4da6014f3e5c5b776fe4cc"
+  integrity sha512-ikyuZ/4VX4YrCckVHDc4H6UkTr5UjtkxSH+UdlEIgP9v93W1Bbvnoao0hgQODm8cvNWigmpLpKoGUzgyjBlrdw==
+
+"@stimulus-components/popover@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@stimulus-components/popover/-/popover-7.0.0.tgz#0bd6b802536f4369ed953e8cf649495545b4b03c"
+  integrity sha512-GRO/vP5XfWs/JXFqnyW3cSNWMLGh5MTrwwoQ/uBOgzVEU6P5zoAIGhOQixJ+nZeOWW6cW6hy/zh2pwUgJ345uQ==
+
+"@stimulus-components/read-more@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@stimulus-components/read-more/-/read-more-5.0.0.tgz#125b6e23a86afd97309a6148b911f35075a44f40"
+  integrity sha512-SwpdWrLOz9u/fuo6aTu5DjoyTnbixCB7RO3b63TTZ8GVjEiNcynu4ZEveBg+MNoc8ivZNqYBWI411Qn/fPtWtw==
+
 ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"
@@ -321,9 +348,9 @@ camelcase-css@^2.0.1:
   integrity sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==
 
 caniuse-lite@^1.0.30001587, caniuse-lite@^1.0.30001599:
-  version "1.0.30001625"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001625.tgz#ead1b155ea691d6a87938754d3cb119c24465b03"
-  integrity sha512-4KE9N2gcRH+HQhpeiRZXd+1niLB/XNLAhSy4z7fI8EzcbcPoAqjNInxVHTiTwWfTIV4w096XG8OtCOCQQKPv3w==
+  version "1.0.30001629"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001629.tgz"
+  integrity sha512-c3dl911slnQhmxUIT4HhYzT7wnBK/XYpGnYLOj4nJBaRiw52Ibe7YxlDaAeRECvA786zCuExhxIUJ2K7nHMrBw==
 
 chokidar@^3.5.3:
   version "3.6.0"
@@ -811,6 +838,11 @@ spark-md5@^3.0.1:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/spark-md5/-/spark-md5-3.0.2.tgz#7952c4a30784347abcee73268e473b9c0167e3fc"
   integrity sha512-wcFzz9cDfbuqe0FZzfi2or1sgyIrsDwmPwfZC4hiNidPdPINjeUwNfv5kldczoEAcjl9Y1L3SM7Uz2PUEQzxQw==
+
+stimulus-use@^0.52.2:
+  version "0.52.2"
+  resolved "https://registry.yarnpkg.com/stimulus-use/-/stimulus-use-0.52.2.tgz#fc992fababe03f8d8bc2d9470c8cdb40bd075917"
+  integrity sha512-413+tIw9n6Jnb0OFiQE1i3aP01i0hhGgAnPp1P6cNuBbhhqG2IOp8t1O/4s5Tw2lTvSYrFeLNdaY8sYlDaULeg==
 
 "string-width-cjs@npm:string-width@^4.2.0":
   version "4.2.3"
