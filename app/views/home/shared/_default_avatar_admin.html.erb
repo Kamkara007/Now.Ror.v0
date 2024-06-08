@@ -1,0 +1,15 @@
+  <% if current_admin.admin_avatar.attached? %>
+    <div class="avatar placeholder  ">
+        <div class=" bg-neutral-focus text-neutral-content rounded-full w-16 md:w-24 ">
+            <span class="text-3xl"> <%=  image_tag(current_admin.admin_avatar, alt:"Photo de profil") %> </span>
+        </div>
+    </div> 
+  <% else %>
+    <% admin_default_avatar = "#{[current_admin.first_name.first, current_admin.last_name.first].join('')}"  %>
+
+    <div class="avatar placeholder  ">
+        <div class=" bg-neutral-focus text-neutral-content rounded-full w-8 md:w-8 ">
+            <span class="text-3xl"> <%= admin_default_avatar %> </span>
+        </div>
+    </div> 
+<% end %>

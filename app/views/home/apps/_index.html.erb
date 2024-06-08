@@ -1,0 +1,17 @@
+
+<div class="container mx-auto mt-6">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <!-- fixed left bar on scroll -->
+    <%= render "home/apps/sidebar/sidebar" %> 
+   
+    <div class="col-span-2">
+      <%= render "home/apps/feed/topbar" %>
+      <!-- render notification -->
+      <%= render "home/apps/feed/notifications" %>
+      <%= render "home/apps/feed/post" %>
+    </div>
+
+    <!-- Bottom navbar -->
+    <%= render "home/apps/feed/bottom_navbar" %>
+  </div>
+</div>

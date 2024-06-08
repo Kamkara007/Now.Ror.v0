@@ -6,3 +6,26 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+
+
+
+// Add Notifications 
+import Notification from '@stimulus-components/notification'
+application.register('notification', Notification)
+
+// Password visibility
+import PasswordVisibility from '@stimulus-components/password-visibility'
+application.register('password-visibility', PasswordVisibility)
+
+// readMore
+import ReadMore from '@stimulus-components/read-more'
+application.register('read-more', ReadMore)
+
+// Pop up form
+import Dialog from '@stimulus-components/dialog'
+application.register('dialog', Dialog)
+
+//Popover
+import Popover from '@stimulus-components/popover'
+application.register('popover', Popover)

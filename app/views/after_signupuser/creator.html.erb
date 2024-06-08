@@ -1,0 +1,58 @@
+
+<% @title="profil créateur" %>
+
+<div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-md w-full space-y-8 border p-4 bg-white">
+    <div>
+      <h2 class="mt-6 text-center text-xl font-extrabold text-gray-900">
+        Renforcons la sécurité de votre compte
+      </h2>      
+    </div>
+
+    <%= form_for @user, method: :put, url: wizard_path do |f| %>
+      <% if f.object.errors.any? %>
+        <div class="error_messages">
+          <% f.object.errors.full_messages.each do |error| %>
+            <p style="color: red"><%= error %></p>
+          <% end %>
+        </div>
+      <% end %>
+      <!-- user status 
+      -hidden field, 
+      -value="creator"
+      -->
+      <%= f.hidden_field :user_status, value: "creator" %>
+      <!-- user avatar -->
+
+      <div class="flex items-center justify-center">
+        <div class="relative w-24 h-24 rounded-full">
+          <%= f.label :user_avatar, class: "block w-full h-full rounded-full cursor-pointer" do %>
+            <div class="absolute inset-0 flex items-center justify-center bg-gray-200 rounded-full">
+              <span class="text-gray-500">Photo profil</span>
+              <div class="absolute bottom-0 right-0 flex items-center justify-center w-6 h-6 bg-primary rounded-full text-white">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                </svg>
+              </div>
+            </div>
+            <%= f.file_field :user_avatar, class: "absolute inset-0 w-full h-full opacity-0 cursor-pointer" %>
+          <% end %>
+        </div>
+      </div> 
+      <!-- Creator Full name -->
+      <div class="mt-4">
+        <%= f.label :full_name, 'Nom complet', class: "py-2" %>
+        <%= f.text_field :full_name, placeholder: "Ex: Jean paul",
+          class: " ln-text-field ln-text-field-focus" %>
+      </div> 
+
+      <div class="py-2">
+        <%= f.label :"un texte introductif", class: "py-2" %>
+        <%= f.text_area :user_bio, placeholder: "Ex: CEO Du studio Paris+", class: "ln-text-field ln-text-field-focus" %>
+      </div>   
+      <div class="d-flex flex-row-reverse">
+        <%= f.submit 'Terminer', class:"ln-sign" %>
+      </div>
+    <% end %>     
+  </div>
+</div>

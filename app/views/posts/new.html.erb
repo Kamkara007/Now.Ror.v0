@@ -1,0 +1,9 @@
+<% @title="Nouveau Post" %>
+<div class="bg-base-200 h-screen">
+  <%#= render "homepage/feed/navbar" %>
+  <div class="w-full mx-auto md:w-2/3 pt-20 ">
+    <div class="mx-auto border p-4 bg-white">
+      <%= render "form", post: @post %>
+    </div>
+  </div>
+</div>

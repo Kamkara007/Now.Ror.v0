@@ -92,7 +92,8 @@ gem "pagy", "~> 8.4" #https://github.com/ddnexus/pagy
 
 
 ####### AUTHENTICATION && SECURITY ############
-#gem "devise", "~> 4.9"
-#gem "wicked", "~> 2.0"
+gem "devise", "~> 4.9"
 gem "nanoid", "~> 2.0"
 #gem 'devise_invitable', '~> 2.0', '>= 2.0.9'
+
+gem "wicked", "~> 2.0"
