@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.3.1"
+ruby "3.3.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.3"
@@ -89,13 +89,12 @@ gem "active_storage_validations", "~> 1.1"
 gem "pagy", "~> 8.4" #https://github.com/ddnexus/pagy
 
 ########  ICON && APP DECORATIONS  ############
-
+gem "heroicons-rails", "~> 1.2"
 
 ####### AUTHENTICATION && SECURITY ############
 gem "devise", "~> 4.9"
 gem "nanoid", "~> 2.0"
+gem "wicked", "~> 2.0"
 #gem 'devise_invitable', '~> 2.0', '>= 2.0.9'
 
-gem "wicked", "~> 2.0"
 
-gem "heroicons-rails", "~> 1.2"
